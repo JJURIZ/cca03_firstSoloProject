@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BookManager.Models;
+using ApplicationCore.Entities;
 
 namespace BookManager.Controllers
 {
@@ -20,6 +21,16 @@ namespace BookManager.Controllers
 
         public IActionResult Index()
         {
+            
+            //Book newBook = new Book
+            //{
+            //    Id = 1,
+            //    Author = "bill blunder",
+            //    Title = "bluderbus",
+            //    Genre = "non-fiction",
+            //    PublicationYear = 2019
+            //};
+
             return View();
         }
 
